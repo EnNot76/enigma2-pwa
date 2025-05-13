@@ -1,0 +1,23 @@
+{
+  "name": "EN.igma²",
+  "short_name": "EN.igma²",
+  "description": "Cripta e decripta i tuoi messaggi segreti con stile!",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#2c1b47",
+  "theme_color": "#9333ea",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "lang": "it-IT",
+  "dir": "ltr"
+}
