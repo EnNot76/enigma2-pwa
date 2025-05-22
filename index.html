@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENigma³</title>
-    <link rel="manifest" href="/manifest.json">
+    <title>EN.igma²</title>
+    <link rel="manifest" href="/enigma2-pwa/manifest.json">
     <meta name="theme-color" content="#9333ea">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
-</head>
+    <link rel="apple-touch-icon" href="/enigma2-pwa/icons/icon-144x144.png">
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -60,7 +59,7 @@
         @media (max-width: 600px) {
             .help-btn {
                 font-size: 0.8em;
-                top: 460px;
+                top: 430px;
                 right: 0.4px;
             }
         }
@@ -254,7 +253,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>ENigma³<button class="help-btn" onclick="showPopup()">?</button></h1>
+        <h1>EN.igma² <button class="help-btn" onclick="showPopup()">?</button></h1>
         <label for="key">Chiave segreta:</label>
         <input type="text" id="key" placeholder="Inserisci la chiave">
         <label for="message">Messaggio:</label>
@@ -395,7 +394,7 @@
         // Registrazione del Service Worker
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js')
+                navigator.serviceWorker.register('/enigma2-pwa/service-worker.js')
                     .then(registration => {
                         console.log('Service Worker registrato con successo:', registration);
                     })
